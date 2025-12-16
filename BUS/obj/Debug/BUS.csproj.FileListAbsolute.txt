@@ -1,0 +1,12 @@
+D:\PMQL\Project\QLTV\BUS\bin\Debug\BUS.dll
+D:\PMQL\Project\QLTV\BUS\bin\Debug\BUS.pdb
+D:\PMQL\Project\QLTV\BUS\bin\Debug\DAL.dll
+D:\PMQL\Project\QLTV\BUS\bin\Debug\DTO.dll
+D:\PMQL\Project\QLTV\BUS\bin\Debug\DAL.pdb
+D:\PMQL\Project\QLTV\BUS\bin\Debug\DAL.dll.config
+D:\PMQL\Project\QLTV\BUS\bin\Debug\DTO.pdb
+D:\PMQL\Project\QLTV\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\PMQL\Project\QLTV\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\PMQL\Project\QLTV\BUS\obj\Debug\BUS.csproj.Up2Date
+D:\PMQL\Project\QLTV\BUS\obj\Debug\BUS.dll
+D:\PMQL\Project\QLTV\BUS\obj\Debug\BUS.pdb
