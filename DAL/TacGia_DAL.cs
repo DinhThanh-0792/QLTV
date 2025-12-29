@@ -40,15 +40,14 @@ namespace DAL
             ExecuteNonQuery(cmd);
         }
 
-        public DataTable Search(string tenTG)
+        public DataTable Search(string TenTG)
         {
             string sql = @"SELECT * FROM TACGIA 
-                   WHERE TenTG LIKE N'%' + @TenTG + '%'";
+                   WHERE TenTG LIKE N'%" + TenTG + "%'";
 
-            SqlCommand cmd = new SqlCommand(sql);
-            cmd.Parameters.Add("@TenTG", SqlDbType.NVarChar, 100).Value = tenTG;
+            
 
-            return LoadDataSearch(cmd);
+            return LoadData(sql);
         }
 
     }

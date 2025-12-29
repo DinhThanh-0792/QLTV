@@ -45,7 +45,7 @@ namespace DAL
         public DataTable Search(NXB_DTO nxb)
         {
             string sql = @"SELECT * FROM NXB
-                            WHERE TenNXB LIKE '%' + @TenNXB + '%'";
+                            WHERE TenNXB LIKE N'%" + nxb.TenNXB + "%'";
 
             return LoadData(sql);
         }

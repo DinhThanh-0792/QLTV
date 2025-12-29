@@ -43,13 +43,9 @@ namespace DAL
 
         public DataTable Search(TheLoai_DTO tl)
         {
-            string sql = @"SELECT * FROM DANHMUC
-                   WHERE TenDM LIKE '%' + @TenDM + '%'";
-
-            SqlCommand cmd = new SqlCommand(sql);
-            cmd.Parameters.Add("@TenDM", SqlDbType.NVarChar, 100).Value = tl.TenDM;
-
-            return LoadDataSearch(cmd);
+            string sql = "SELECT * FROM DANHMUC " +
+                 "WHERE TenDM LIKE N'%" + tl.TenDM + "%'";
+            return LoadData(sql);
         }
 
 

@@ -76,10 +76,10 @@ namespace DAL
 
         public DataTable Search(Sach_DTO s)
         {
-            SqlCommand cmd = new SqlCommand(@"SELECT * FROM SACH WHERE TenSach LIKE '%' + @TenSach + '%'");
+            string sql = @"SELECT * FROM SACH WHERE TenSach LIKE N'%" + s.TenSach + "%'";
 
-            cmd.Parameters.Add("@TenSach", SqlDbType.NVarChar).Value = s.TenSach;
-            return LoadDataSearch(cmd);
+            
+            return LoadData(sql);
         }
 
         public DataTable LoadDanhMuc()
