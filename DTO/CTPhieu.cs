@@ -8,13 +8,13 @@ namespace DTO
 {
     public class CTPhieu
     {
-        public string ID_ChiTiet { get; set; }
+        public int ID_ChiTiet { get; set; }
         public int ID_Phieu { get; set; }
         public int ID_Sach { get; set; }
         public int SoLuong { get; set; }
         public bool TinhTrangTra { get; set; }
         public CTPhieu() { }
-        public CTPhieu(string id_ChiTiet, int id_Phieu, int id_Sach, int soLuong, bool tinhTrangTra)
+        public CTPhieu(int id_ChiTiet, int id_Phieu, int id_Sach, int soLuong, bool tinhTrangTra)
         {
             ID_ChiTiet = id_ChiTiet;
             ID_Phieu = id_Phieu;

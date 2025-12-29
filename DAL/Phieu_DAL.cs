@@ -16,10 +16,9 @@ namespace DAL
             string sql = "SELECT * FROM PHIEU";
             return LoadData(sql);
         }
-        public void InsertPhieu(Phieu p)
+        public int InsertPhieu(Phieu p)
         {
-            SqlCommand cmd = new SqlCommand("INSERT INTO PHIEU (MaPhieu, LoaiPhieu, ID_DG, ID_NV, NgayMuon, NgayPhaiTra, NgayTraThucTe, GhiChu) VALUES (@MaPhieu, @LoaiPhieu, @ID_DG, @ID_NV, @NgayMuon, @NgayPhaiTra, @NgayTraThucTe, @GhiChu)");
-            cmd.Parameters.AddWithValue("@MaPhieu", p.MaPhieu);
+            SqlCommand cmd = new SqlCommand("INSERT INTO PHIEU (LoaiPhieu, ID_DG, ID_NV, NgayMuon, NgayPhaiTra, NgayTraThucTe, GhiChu) VALUES (@LoaiPhieu, @ID_DG, @ID_NV, @NgayMuon, @NgayPhaiTra, @NgayTraThucTe, @GhiChu)");
             cmd.Parameters.AddWithValue("@LoaiPhieu", p.LoaiPhieu);
             cmd.Parameters.AddWithValue("@ID_DG", p.ID_DG);
             cmd.Parameters.AddWithValue("@ID_NV", p.ID_NV);
@@ -27,6 +26,14 @@ namespace DAL
             cmd.Parameters.AddWithValue("@NgayPhaiTra", p.NgayPhaiTra);
             cmd.Parameters.AddWithValue("@NgayTraThucTe", (object)p.NgayTraThucTe ?? DBNull.Value);
             cmd.Parameters.AddWithValue("@GhiChu", p.GhiChu);
+            ExecuteNonQuery(cmd);
+            return int.Parse(ExecuteScalar(cmd).ToString());
+        }
+        public void UpdatePhieu(Phieu p)
+        {
+            SqlCommand cmd = new SqlCommand("Update Phieu Set LoaiPhieu ='Trả',NgayTraThucTe = @NgayTra Where ID_Phieu = @ID_Phieu");
+            cmd.Parameters.AddWithValue("@ID_Phieu", p.ID_Phieu);
+            cmd.Parameters.AddWithValue("@NgayTra", p.NgayTraThucTe);
             ExecuteNonQuery(cmd);
         }
     }

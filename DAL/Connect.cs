@@ -30,5 +30,13 @@ namespace DAL
             cmd.ExecuteNonQuery();
             conn.Close();
         }
+        public object ExecuteScalar(SqlCommand cmd)
+        {
+            cmd.Connection = conn;
+            conn.Open();
+            object obj = cmd.ExecuteScalar();
+            conn.Close();
+            return obj;
+        }
     }
 }

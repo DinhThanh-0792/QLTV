@@ -32,14 +32,14 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.txtTimSach = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnTimSach = new Guna.UI2.WinForms.Guna2Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewSachMuon = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.numericUpDownSLSach = new System.Windows.Forms.NumericUpDown();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSachMuon)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSLSach)).BeginInit();
             this.SuspendLayout();
@@ -52,12 +52,11 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.dataGridViewSachMuon, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.guna2Button1, 1, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
@@ -66,7 +65,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(780, 378);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(585, 307);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -77,13 +76,12 @@
             this.tableLayoutPanel2.Controls.Add(this.txtTimSach, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnTimSach, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(19, 11);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(14, 9);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(366, 48);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(274, 40);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // txtTimSach
@@ -99,12 +97,12 @@
             this.txtTimSach.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTimSach.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTimSach.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTimSach.Location = new System.Drawing.Point(5, 5);
-            this.txtTimSach.Margin = new System.Windows.Forms.Padding(5);
+            this.txtTimSach.Location = new System.Drawing.Point(4, 4);
+            this.txtTimSach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTimSach.Name = "txtTimSach";
             this.txtTimSach.PlaceholderText = "Tìm kiếm";
             this.txtTimSach.SelectedText = "";
-            this.txtTimSach.Size = new System.Drawing.Size(282, 38);
+            this.txtTimSach.Size = new System.Drawing.Size(211, 32);
             this.txtTimSach.TabIndex = 0;
             // 
             // btnTimSach
@@ -118,23 +116,21 @@
             this.btnTimSach.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnTimSach.ForeColor = System.Drawing.Color.White;
             this.btnTimSach.Image = global::QLTV.Properties.Resources.seach;
-            this.btnTimSach.Location = new System.Drawing.Point(296, 4);
-            this.btnTimSach.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTimSach.Location = new System.Drawing.Point(222, 3);
             this.btnTimSach.Name = "btnTimSach";
-            this.btnTimSach.Size = new System.Drawing.Size(66, 40);
+            this.btnTimSach.Size = new System.Drawing.Size(49, 34);
             this.btnTimSach.TabIndex = 1;
             // 
-            // dataGridView1
+            // dataGridViewSachMuon
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableLayoutPanel1.SetColumnSpan(this.dataGridView1, 2);
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(19, 67);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(740, 181);
-            this.dataGridView1.TabIndex = 1;
+            this.dataGridViewSachMuon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableLayoutPanel1.SetColumnSpan(this.dataGridViewSachMuon, 2);
+            this.dataGridViewSachMuon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewSachMuon.Location = new System.Drawing.Point(14, 55);
+            this.dataGridViewSachMuon.Name = "dataGridViewSachMuon";
+            this.dataGridViewSachMuon.RowHeadersWidth = 51;
+            this.dataGridViewSachMuon.Size = new System.Drawing.Size(554, 147);
+            this.dataGridViewSachMuon.TabIndex = 1;
             // 
             // tableLayoutPanel3
             // 
@@ -144,13 +140,12 @@
             this.tableLayoutPanel3.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.numericUpDownSLSach, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(19, 256);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(14, 208);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(366, 48);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(274, 40);
             this.tableLayoutPanel3.TabIndex = 2;
             // 
             // label1
@@ -158,10 +153,9 @@
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(248, 48);
+            this.label1.Size = new System.Drawing.Size(185, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "Số lượng mượn:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -170,15 +164,14 @@
             // 
             this.numericUpDownSLSach.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numericUpDownSLSach.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSLSach.Location = new System.Drawing.Point(260, 4);
-            this.numericUpDownSLSach.Margin = new System.Windows.Forms.Padding(4);
+            this.numericUpDownSLSach.Location = new System.Drawing.Point(194, 3);
             this.numericUpDownSLSach.Maximum = new decimal(new int[] {
             5,
             0,
             0,
             0});
             this.numericUpDownSLSach.Name = "numericUpDownSLSach";
-            this.numericUpDownSLSach.Size = new System.Drawing.Size(102, 34);
+            this.numericUpDownSLSach.Size = new System.Drawing.Size(77, 29);
             this.numericUpDownSLSach.TabIndex = 1;
             this.numericUpDownSLSach.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -194,26 +187,24 @@
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.Location = new System.Drawing.Point(19, 312);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button1.Location = new System.Drawing.Point(14, 254);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(366, 52);
+            this.guna2Button1.Size = new System.Drawing.Size(274, 43);
             this.guna2Button1.TabIndex = 3;
             this.guna2Button1.Text = "Chọn";
             this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // FormThemSach
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(780, 378);
+            this.ClientSize = new System.Drawing.Size(585, 307);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormThemSach";
             this.Text = "FormThemSach";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSachMuon)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSLSach)).EndInit();
@@ -227,7 +218,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private Guna.UI2.WinForms.Guna2TextBox txtTimSach;
         private Guna.UI2.WinForms.Guna2Button btnTimSach;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewSachMuon;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown numericUpDownSLSach;
