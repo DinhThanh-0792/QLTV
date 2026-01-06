@@ -38,3 +38,13 @@ D:\PMQLTV2\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\PMQLTV2\DAL\obj\Debug\DAL.csproj.Up2Date
 D:\PMQLTV2\DAL\obj\Debug\DAL.dll
 D:\PMQLTV2\DAL\obj\Debug\DAL.pdb
+D:\TH\XDPM QL\QLTV\DAL\bin\Debug\DAL.dll.config
+D:\TH\XDPM QL\QLTV\DAL\bin\Debug\DAL.dll
+D:\TH\XDPM QL\QLTV\DAL\bin\Debug\DAL.pdb
+D:\TH\XDPM QL\QLTV\DAL\bin\Debug\DTO.dll
+D:\TH\XDPM QL\QLTV\DAL\bin\Debug\DTO.pdb
+D:\TH\XDPM QL\QLTV\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\TH\XDPM QL\QLTV\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\TH\XDPM QL\QLTV\DAL\obj\Debug\DAL.csproj.Up2Date
+D:\TH\XDPM QL\QLTV\DAL\obj\Debug\DAL.dll
+D:\TH\XDPM QL\QLTV\DAL\obj\Debug\DAL.pdb

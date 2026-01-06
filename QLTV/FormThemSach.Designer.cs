@@ -57,6 +57,7 @@
             this.tableLayoutPanel1.Controls.Add(this.btnChonSach, 1, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
@@ -65,7 +66,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(585, 307);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(878, 472);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -76,12 +77,13 @@
             this.tableLayoutPanel2.Controls.Add(this.txtTimSach, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnTimSach, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(14, 9);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(21, 14);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(274, 40);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(413, 60);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // txtTimSach
@@ -97,12 +99,12 @@
             this.txtTimSach.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTimSach.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTimSach.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTimSach.Location = new System.Drawing.Point(4, 4);
-            this.txtTimSach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTimSach.Location = new System.Drawing.Point(6, 6);
+            this.txtTimSach.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtTimSach.Name = "txtTimSach";
             this.txtTimSach.PlaceholderText = "Tìm kiếm";
             this.txtTimSach.SelectedText = "";
-            this.txtTimSach.Size = new System.Drawing.Size(211, 32);
+            this.txtTimSach.Size = new System.Drawing.Size(318, 48);
             this.txtTimSach.TabIndex = 0;
             // 
             // btnTimSach
@@ -116,9 +118,10 @@
             this.btnTimSach.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnTimSach.ForeColor = System.Drawing.Color.White;
             this.btnTimSach.Image = global::QLTV.Properties.Resources.seach;
-            this.btnTimSach.Location = new System.Drawing.Point(222, 3);
+            this.btnTimSach.Location = new System.Drawing.Point(334, 5);
+            this.btnTimSach.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnTimSach.Name = "btnTimSach";
-            this.btnTimSach.Size = new System.Drawing.Size(49, 34);
+            this.btnTimSach.Size = new System.Drawing.Size(75, 50);
             this.btnTimSach.TabIndex = 1;
             // 
             // dataGridViewSachMuon
@@ -126,10 +129,11 @@
             this.dataGridViewSachMuon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableLayoutPanel1.SetColumnSpan(this.dataGridViewSachMuon, 2);
             this.dataGridViewSachMuon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewSachMuon.Location = new System.Drawing.Point(14, 55);
+            this.dataGridViewSachMuon.Location = new System.Drawing.Point(21, 84);
+            this.dataGridViewSachMuon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridViewSachMuon.Name = "dataGridViewSachMuon";
             this.dataGridViewSachMuon.RowHeadersWidth = 51;
-            this.dataGridViewSachMuon.Size = new System.Drawing.Size(554, 147);
+            this.dataGridViewSachMuon.Size = new System.Drawing.Size(834, 226);
             this.dataGridViewSachMuon.TabIndex = 1;
             // 
             // tableLayoutPanel3
@@ -140,12 +144,13 @@
             this.tableLayoutPanel3.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.numericUpDownSLSach, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(14, 208);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(21, 320);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(274, 40);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(413, 60);
             this.tableLayoutPanel3.TabIndex = 2;
             // 
             // label1
@@ -153,9 +158,10 @@
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Location = new System.Drawing.Point(4, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 40);
+            this.label1.Size = new System.Drawing.Size(281, 60);
             this.label1.TabIndex = 0;
             this.label1.Text = "Số lượng mượn:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -164,14 +170,15 @@
             // 
             this.numericUpDownSLSach.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numericUpDownSLSach.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownSLSach.Location = new System.Drawing.Point(194, 3);
+            this.numericUpDownSLSach.Location = new System.Drawing.Point(293, 5);
+            this.numericUpDownSLSach.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numericUpDownSLSach.Maximum = new decimal(new int[] {
             5,
             0,
             0,
             0});
             this.numericUpDownSLSach.Name = "numericUpDownSLSach";
-            this.numericUpDownSLSach.Size = new System.Drawing.Size(77, 29);
+            this.numericUpDownSLSach.Size = new System.Drawing.Size(116, 39);
             this.numericUpDownSLSach.TabIndex = 1;
             this.numericUpDownSLSach.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -187,9 +194,10 @@
             this.btnChonSach.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChonSach.ForeColor = System.Drawing.Color.White;
             this.btnChonSach.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnChonSach.Location = new System.Drawing.Point(14, 254);
+            this.btnChonSach.Location = new System.Drawing.Point(21, 390);
+            this.btnChonSach.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnChonSach.Name = "btnChonSach";
-            this.btnChonSach.Size = new System.Drawing.Size(274, 43);
+            this.btnChonSach.Size = new System.Drawing.Size(413, 65);
             this.btnChonSach.TabIndex = 3;
             this.btnChonSach.Text = "Chọn";
             this.btnChonSach.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -197,10 +205,11 @@
             // 
             // FormThemSach
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(585, 307);
+            this.ClientSize = new System.Drawing.Size(878, 472);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormThemSach";
             this.Text = "FormThemSach";
             this.Load += new System.EventHandler(this.FormThemSach_Load);

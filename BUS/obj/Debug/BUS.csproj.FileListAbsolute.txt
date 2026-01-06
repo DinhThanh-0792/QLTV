@@ -46,3 +46,15 @@ D:\PMQLTV2\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
 D:\PMQLTV2\BUS\obj\Debug\BUS.csproj.Up2Date
 D:\PMQLTV2\BUS\obj\Debug\BUS.dll
 D:\PMQLTV2\BUS\obj\Debug\BUS.pdb
+D:\TH\XDPM QL\QLTV\BUS\bin\Debug\BUS.dll
+D:\TH\XDPM QL\QLTV\BUS\bin\Debug\BUS.pdb
+D:\TH\XDPM QL\QLTV\BUS\bin\Debug\DAL.dll
+D:\TH\XDPM QL\QLTV\BUS\bin\Debug\DTO.dll
+D:\TH\XDPM QL\QLTV\BUS\bin\Debug\DAL.pdb
+D:\TH\XDPM QL\QLTV\BUS\bin\Debug\DAL.dll.config
+D:\TH\XDPM QL\QLTV\BUS\bin\Debug\DTO.pdb
+D:\TH\XDPM QL\QLTV\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\TH\XDPM QL\QLTV\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\TH\XDPM QL\QLTV\BUS\obj\Debug\BUS.csproj.Up2Date
+D:\TH\XDPM QL\QLTV\BUS\obj\Debug\BUS.dll
+D:\TH\XDPM QL\QLTV\BUS\obj\Debug\BUS.pdb

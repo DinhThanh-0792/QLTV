@@ -20,7 +20,13 @@ namespace DAL
                             INNER JOIN DANHMUC dm ON s.ID_DM = dm.ID_DM";
             return LoadData(sql);
         }
+        public DataTable Load_Report()
+        {
+            string sql = @"SELECT ID_Sach, TenSach, ID_TG, ID_NXB, NamXB, SoLuong, TonKho, ID_DM, Anh, GiaSach FROM SACH";
+            return LoadData(sql);
 
+
+        }
         public void Insert(Sach_DTO s)
         {
             SqlCommand cmd = new SqlCommand(@"INSERT INTO SACH 

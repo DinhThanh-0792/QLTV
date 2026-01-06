@@ -22,3 +22,9 @@ D:\PMQLTV2\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
 D:\PMQLTV2\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\PMQLTV2\DTO\obj\Debug\DTO.dll
 D:\PMQLTV2\DTO\obj\Debug\DTO.pdb
+D:\TH\XDPM QL\QLTV\DTO\bin\Debug\DTO.dll
+D:\TH\XDPM QL\QLTV\DTO\bin\Debug\DTO.pdb
+D:\TH\XDPM QL\QLTV\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\TH\XDPM QL\QLTV\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\TH\XDPM QL\QLTV\DTO\obj\Debug\DTO.dll
+D:\TH\XDPM QL\QLTV\DTO\obj\Debug\DTO.pdb

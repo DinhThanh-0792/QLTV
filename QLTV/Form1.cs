@@ -62,5 +62,10 @@ namespace QLTV
         {
             LoadControl(new ThongKe());
         }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

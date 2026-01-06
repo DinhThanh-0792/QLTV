@@ -18,6 +18,10 @@ namespace BUS
         {
             return dal.Load();
         }
+        public DataTable Load_Report()
+        {
+            return dal.Load_Report();
+        }
 
         // INSERT
         public void Insert(Sach_DTO s)
