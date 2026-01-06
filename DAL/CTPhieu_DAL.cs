@@ -13,7 +13,7 @@ namespace DAL
     {
         public void InsertCTPhieu(CTPhieu ct)
         {
-            SqlCommand cmd = new SqlCommand("INSERT INTO CT_PHIEU (ID_Phieu, ID_Sach, SoLuong, TinhTrangTra) VALUES (@ID_Phieu, @ID_Sach, @SoLuong, @TinhTrangTra)");
+            SqlCommand cmd = new SqlCommand("INSERT INTO CHITIET_PHIEU (ID_Phieu, ID_Sach, SoLuong, TinhTrangTra) VALUES (@ID_Phieu, @ID_Sach, @SoLuong, @TinhTrangTra)");
             cmd.Parameters.AddWithValue("@ID_Phieu", ct.ID_Phieu);
             cmd.Parameters.AddWithValue("@ID_Sach", ct.ID_Sach);
             cmd.Parameters.AddWithValue("@SoLuong", ct.SoLuong);
@@ -23,17 +23,20 @@ namespace DAL
         public DataTable LoadChiTiet(int id_Phieu)
         {
             string sql = "SELECT ct.ID_ChiTiet, s.TenSach, ct.SoLuong, ct.TinhTrangTra " +
-                         "FROM CT_PHIEU ct " +
+                         "FROM CHITIET_PHIEU ct " +
                          "JOIN SACH s ON ct.ID_Sach = s.ID_Sach " +
                          "WHERE ct.ID_Phieu = @ID_Phieu";
-            SqlCommand cmd = new SqlCommand(sql);
-            cmd.Parameters.AddWithValue("@ID_Phieu", id_Phieu);
-            using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+            using (SqlCommand cmd = new SqlCommand(sql, conn))
             {
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                return dt;
+                cmd.Parameters.AddWithValue("@ID_Phieu", id_Phieu);
+                using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                {
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    return dt;
+                }
             }
+            
         }
     }
 }

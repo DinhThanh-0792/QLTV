@@ -36,7 +36,7 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.numericUpDownSLSach = new System.Windows.Forms.NumericUpDown();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnChonSach = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSachMuon)).BeginInit();
@@ -54,7 +54,7 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.dataGridViewSachMuon, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.guna2Button1, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.btnChonSach, 1, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -175,24 +175,25 @@
             this.numericUpDownSLSach.TabIndex = 1;
             this.numericUpDownSLSach.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // guna2Button1
+            // btnChonSach
             // 
-            this.guna2Button1.BorderRadius = 15;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Button1.FillColor = System.Drawing.Color.Green;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.Location = new System.Drawing.Point(14, 254);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(274, 43);
-            this.guna2Button1.TabIndex = 3;
-            this.guna2Button1.Text = "Chọn";
-            this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnChonSach.BorderRadius = 15;
+            this.btnChonSach.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnChonSach.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnChonSach.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnChonSach.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnChonSach.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnChonSach.FillColor = System.Drawing.Color.Green;
+            this.btnChonSach.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChonSach.ForeColor = System.Drawing.Color.White;
+            this.btnChonSach.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnChonSach.Location = new System.Drawing.Point(14, 254);
+            this.btnChonSach.Name = "btnChonSach";
+            this.btnChonSach.Size = new System.Drawing.Size(274, 43);
+            this.btnChonSach.TabIndex = 3;
+            this.btnChonSach.Text = "Chọn";
+            this.btnChonSach.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnChonSach.Click += new System.EventHandler(this.btnChonSach_Click);
             // 
             // FormThemSach
             // 
@@ -202,6 +203,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FormThemSach";
             this.Text = "FormThemSach";
+            this.Load += new System.EventHandler(this.FormThemSach_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSachMuon)).EndInit();
@@ -222,6 +224,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown numericUpDownSLSach;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnChonSach;
     }
 }

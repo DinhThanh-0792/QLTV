@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using DTO;
 using DAL;
 using System.Data;
+//using static System.Net.Mime.MediaTypeNames;
 
 namespace BUS
 {
@@ -16,6 +17,11 @@ namespace BUS
         {
             return dAL.LoadTacGia();
         }
+
+        public DataTable SearchTacGia(string tenTG)
+        {
+            return dAL.Search(tenTG);
+        }
         public void InsertTacGia(TacGia tg)
         {
             dAL.InsertTacGia(tg);
@@ -24,9 +30,9 @@ namespace BUS
         {
             dAL.UpdateTacGia(tg);
         }
-        public void DeleteTacGia(string maTG)
+        public void DeleteTacGia(string tenTG)
         {
-            dAL.DeleteTacGia(maTG);
+            dAL.DeleteTacGia(tenTG);
         }
     }
 }

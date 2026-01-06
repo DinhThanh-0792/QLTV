@@ -303,6 +303,7 @@
             this.txtMaPhieu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMaPhieu.Name = "txtMaPhieu";
             this.txtMaPhieu.PlaceholderText = "";
+            this.txtMaPhieu.ReadOnly = true;
             this.txtMaPhieu.SelectedText = "";
             this.txtMaPhieu.Size = new System.Drawing.Size(232, 31);
             this.txtMaPhieu.TabIndex = 10;
@@ -324,6 +325,7 @@
             this.txtMaNhanVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMaNhanVien.Name = "txtMaNhanVien";
             this.txtMaNhanVien.PlaceholderText = "";
+            this.txtMaNhanVien.ReadOnly = true;
             this.txtMaNhanVien.SelectedText = "";
             this.txtMaNhanVien.Size = new System.Drawing.Size(232, 30);
             this.txtMaNhanVien.TabIndex = 11;
@@ -345,6 +347,7 @@
             this.txtMaDocGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMaDocGia.Name = "txtMaDocGia";
             this.txtMaDocGia.PlaceholderText = "";
+            this.txtMaDocGia.ReadOnly = true;
             this.txtMaDocGia.SelectedText = "";
             this.txtMaDocGia.Size = new System.Drawing.Size(232, 30);
             this.txtMaDocGia.TabIndex = 12;
@@ -366,6 +369,7 @@
             this.txtNgayPhaiTra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNgayPhaiTra.Name = "txtNgayPhaiTra";
             this.txtNgayPhaiTra.PlaceholderText = "";
+            this.txtNgayPhaiTra.ReadOnly = true;
             this.txtNgayPhaiTra.SelectedText = "";
             this.txtNgayPhaiTra.Size = new System.Drawing.Size(232, 31);
             this.txtNgayPhaiTra.TabIndex = 13;
@@ -387,6 +391,7 @@
             this.txtNgayMuon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNgayMuon.Name = "txtNgayMuon";
             this.txtNgayMuon.PlaceholderText = "";
+            this.txtNgayMuon.ReadOnly = true;
             this.txtNgayMuon.SelectedText = "";
             this.txtNgayMuon.Size = new System.Drawing.Size(223, 31);
             this.txtNgayMuon.TabIndex = 14;
@@ -408,6 +413,7 @@
             this.txtTenNhanVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTenNhanVien.Name = "txtTenNhanVien";
             this.txtTenNhanVien.PlaceholderText = "";
+            this.txtTenNhanVien.ReadOnly = true;
             this.txtTenNhanVien.SelectedText = "";
             this.txtTenNhanVien.Size = new System.Drawing.Size(223, 30);
             this.txtTenNhanVien.TabIndex = 15;
@@ -429,6 +435,7 @@
             this.txtTenDocGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTenDocGia.Name = "txtTenDocGia";
             this.txtTenDocGia.PlaceholderText = "";
+            this.txtTenDocGia.ReadOnly = true;
             this.txtTenDocGia.SelectedText = "";
             this.txtTenDocGia.Size = new System.Drawing.Size(223, 30);
             this.txtTenDocGia.TabIndex = 16;
@@ -568,6 +575,7 @@
             this.dataGridViewPhieu.Name = "dataGridViewPhieu";
             this.dataGridViewPhieu.Size = new System.Drawing.Size(815, 174);
             this.dataGridViewPhieu.TabIndex = 2;
+            this.dataGridViewPhieu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPhieu_CellClick);
             // 
             // UserControlMuon
             // 

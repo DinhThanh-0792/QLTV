@@ -17,14 +17,18 @@ namespace BUS
         {
             return phieuDAL.LoadPhieu();
         }
+        public DataTable LoadCTPhieu(int ID_Phieu)
+        {
+            return ctDAL.LoadChiTiet(ID_Phieu);
+        }
         // LẬP PHIẾU MƯỢN
-        public void LapPhieuMuon(Phieu p, List<CTPhieu> dsCT)
+        public void LapPhieuMuon(Phieu p, List<CTPhieu> dsChiTiet)
         {
             p.LoaiPhieu = "MUON";
 
             int maPhieu = phieuDAL.InsertPhieu(p);
 
-            foreach (CTPhieu ct in dsCT)
+            foreach (CTPhieu ct in dsChiTiet)
             {
                 ct.ID_Phieu = maPhieu;
                 ctDAL.InsertCTPhieu(ct);

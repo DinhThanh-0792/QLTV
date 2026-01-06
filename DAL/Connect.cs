@@ -10,7 +10,7 @@ namespace DAL
 {
     public class Connect
     {
-        SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;
+        protected SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;
                                                  Initial Catalog=QUAN_LY_THU_VIEN;
                                                  Integrated Security=True");
         SqlCommand cmd;
@@ -30,6 +30,7 @@ namespace DAL
             cmd.ExecuteNonQuery();
             conn.Close();
         }
+
         public object ExecuteScalar(SqlCommand cmd)
         {
             cmd.Connection = conn;
@@ -38,5 +39,9 @@ namespace DAL
             conn.Close();
             return obj;
         }
+
+
+        
+
     }
 }

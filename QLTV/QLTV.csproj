@@ -65,6 +65,12 @@
     <Compile Include="FormPhieuMuon.Designer.cs">
       <DependentUpon>FormPhieuMuon.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPhieuTra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPhieuTra.Designer.cs">
+      <DependentUpon>FormPhieuTra.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormThemSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QUAN_LY_THU_VIENDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUAN_LY_THU_VIENDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QUAN_LY_THU_VIENDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUAN_LY_THU_VIENDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QUAN_LY_THU_VIENDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUAN_LY_THU_VIENDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ThongKe.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -109,11 +130,20 @@
     <Compile Include="UserControlTaiKhoan.Designer.cs">
       <DependentUpon>UserControlTaiKhoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlTra.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlTra.Designer.cs">
+      <DependentUpon>UserControlTra.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPhieuMuon.resx">
       <DependentUpon>FormPhieuMuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPhieuTra.resx">
+      <DependentUpon>FormPhieuTra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormThemSach.resx">
       <DependentUpon>FormThemSach.cs</DependentUpon>
@@ -146,6 +176,9 @@
     <EmbeddedResource Include="UserControlTaiKhoan.resx">
       <DependentUpon>UserControlTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControlTra.resx">
+      <DependentUpon>UserControlTra.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -161,6 +194,39 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="QUAN_LY_THU_VIENDataSet.xsc">
+      <DependentUpon>QUAN_LY_THU_VIENDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QUAN_LY_THU_VIENDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUAN_LY_THU_VIENDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUAN_LY_THU_VIENDataSet.xss">
+      <DependentUpon>QUAN_LY_THU_VIENDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QUAN_LY_THU_VIENDataSet1.xsc">
+      <DependentUpon>QUAN_LY_THU_VIENDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QUAN_LY_THU_VIENDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUAN_LY_THU_VIENDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUAN_LY_THU_VIENDataSet1.xss">
+      <DependentUpon>QUAN_LY_THU_VIENDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QUAN_LY_THU_VIENDataSet2.xsc">
+      <DependentUpon>QUAN_LY_THU_VIENDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QUAN_LY_THU_VIENDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUAN_LY_THU_VIENDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUAN_LY_THU_VIENDataSet2.xss">
+      <DependentUpon>QUAN_LY_THU_VIENDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Resources\account.png" />
   </ItemGroup>
   <ItemGroup>
