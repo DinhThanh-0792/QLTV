@@ -1,7 +1,12 @@
+# Visual Studio
 .vs/
+
+# Build output
 **/bin/
 **/obj/
+
+# User-specific
 *.user
 *.suo
-*.log
 *.cache
+*.log
