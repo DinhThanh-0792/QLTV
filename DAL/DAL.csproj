@@ -43,11 +43,8 @@
   <ItemGroup>
     <Compile Include="Combobox_thongke_DAL.cs" />
     <Compile Include="Connect.cs" />
- 
     <Compile Include="CTPhieu_DAL.cs" />
-
     <Compile Include="NXB_DAL.cs" />
- 
     <Compile Include="Phieu_DAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
@@ -67,6 +64,7 @@
     <Compile Include="ThongKeMuonTra_DAL.cs" />
     <Compile Include="ThongKeNhanVien_DAL.cs" />
     <Compile Include="ThongKe_DAL.cs" />
+    <Compile Include="TongQuan_DAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DTO\DTO.csproj">

@@ -96,13 +96,13 @@ namespace DAL
             if (s.NamTu.HasValue)
             {
                 if (s.NamDen.HasValue)
-                    sql += " AND s.NXB BETWEEN " + s.NamTu + " AND " + s.NamDen;
+                    sql += " AND s.NamXB BETWEEN " + s.NamTu + " AND " + s.NamDen;
                 else
-                    sql += " AND s.NXB >= " + s.NamTu;
+                    sql += " AND s.NamXB >= " + s.NamTu;
             }
             else if (s.NamDen.HasValue)
             {
-                sql += " AND s.NXB <= " + s.NamDen;
+                sql += " AND s.NamXB <= " + s.NamDen;
             }
 
             return LoadData(sql);

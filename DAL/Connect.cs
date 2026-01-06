@@ -10,7 +10,7 @@ namespace DAL
 {
     public class Connect
     {
-        protected SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-RG8L6LR\SQLEXPRESS01;
+        protected SqlConnection conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;
                                                  Initial Catalog=QUAN_LY_THU_VIEN;
                                                  Integrated Security=True");
         SqlCommand cmd;

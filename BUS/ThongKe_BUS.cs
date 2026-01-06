@@ -10,6 +10,7 @@ namespace BUS
         ThongKeDocGia_DAL tkdg = new ThongKeDocGia_DAL();
         ThongKeNhanVien_DAL tknv = new ThongKeNhanVien_DAL();
         ThongKeMuonTra_DAL tkmt = new ThongKeMuonTra_DAL();
+        TongQuan_DAL tq = new TongQuan_DAL();
         public DataTable Load_Sach()
         {
             return tks.Load_Sach();
@@ -41,6 +42,18 @@ namespace BUS
         public DataTable ThongKeMuonTra(DTO_ThongKeMuonTra dk)
         {
             return tkmt.ThongKeMuonTra(dk);
+        }
+        public DataTable Top4DG()
+        {
+            return tq.Top4DocGia();
+        }
+        public DataTable SLSach()
+        {
+            return tq.SLSach();
+        }
+        public DataTable Top4NV()
+        {
+            return tq.Top4NV();
         }
     }
 }
