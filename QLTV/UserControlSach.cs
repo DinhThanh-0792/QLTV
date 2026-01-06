@@ -385,5 +385,23 @@ namespace QLTV
             FormReportFormSach frm = new FormReportFormSach();
             frm.Show();
         }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            FormReportFormSach frm = new FormReportFormSach();
+            frm.Show();
+        }
+
+        private void btnThongKeTL_Click(object sender, EventArgs e)
+        {
+            FormReportFormSach frm = new FormReportFormSach();
+            frm.Show();
+        }
+
+        private void btnThongKeNXB_Click(object sender, EventArgs e)
+        {
+            FormReportFormSach frm = new FormReportFormSach();
+            frm.Show();
+        }
     }
 }
