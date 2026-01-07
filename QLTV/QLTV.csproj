@@ -89,6 +89,12 @@
     <Compile Include="FormPhieuTra.Designer.cs">
       <DependentUpon>FormPhieuTra.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormReportDG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportDG.Designer.cs">
+      <DependentUpon>FormReportDG.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormReportFormSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +200,9 @@
     <EmbeddedResource Include="FormPhieuTra.resx">
       <DependentUpon>FormPhieuTra.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormReportDG.resx">
+      <DependentUpon>FormReportDG.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormReportFormSach.resx">
       <DependentUpon>FormReportFormSach.cs</DependentUpon>
     </EmbeddedResource>
@@ -220,6 +229,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Report_TL.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Report_DG.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <EmbeddedResource Include="ThongKe.resx">

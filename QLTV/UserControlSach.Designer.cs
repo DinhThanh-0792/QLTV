@@ -92,6 +92,7 @@
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.DataGridViewTG = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.btnThongKe = new Guna.UI2.WinForms.Guna2Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2GroupBox4 = new Guna.UI2.WinForms.Guna2GroupBox();
@@ -112,6 +113,7 @@
             this.btnTimKiemDM = new Guna.UI2.WinForms.Guna2Button();
             this.btnThemDM = new Guna.UI2.WinForms.Guna2Button();
             this.dtgvDanhMuc = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.btnThongKeTL = new Guna.UI2.WinForms.Guna2Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2GroupBox3 = new Guna.UI2.WinForms.Guna2GroupBox();
@@ -132,10 +134,8 @@
             this.btnTimKiem = new Guna.UI2.WinForms.Guna2Button();
             this.btnThemNXB = new Guna.UI2.WinForms.Guna2Button();
             this.dtgvNXB = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.btnThongKe = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.btnThongKeTL = new Guna.UI2.WinForms.Guna2Button();
             this.btnThongKeNXB = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2TabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -1203,6 +1203,24 @@
             this.DataGridViewTG.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.DataGridViewTG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewTG_CellClick);
             // 
+            // btnThongKe
+            // 
+            this.btnThongKe.BorderRadius = 15;
+            this.btnThongKe.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnThongKe.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnThongKe.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThongKe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnThongKe.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnThongKe.FillColor = System.Drawing.Color.Lime;
+            this.btnThongKe.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnThongKe.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnThongKe.Location = new System.Drawing.Point(1058, 7);
+            this.btnThongKe.Name = "btnThongKe";
+            this.btnThongKe.Size = new System.Drawing.Size(180, 63);
+            this.btnThongKe.TabIndex = 3;
+            this.btnThongKe.Text = "Thống kê";
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
+            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.tableLayoutPanel15);
@@ -1613,6 +1631,24 @@
             this.dtgvDanhMuc.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvDanhMuc.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dtgvDanhMuc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvDanhMuc_CellClick);
+            // 
+            // btnThongKeTL
+            // 
+            this.btnThongKeTL.BorderRadius = 15;
+            this.btnThongKeTL.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnThongKeTL.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnThongKeTL.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThongKeTL.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnThongKeTL.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnThongKeTL.FillColor = System.Drawing.Color.Lime;
+            this.btnThongKeTL.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnThongKeTL.ForeColor = System.Drawing.Color.Black;
+            this.btnThongKeTL.Location = new System.Drawing.Point(1058, 7);
+            this.btnThongKeTL.Name = "btnThongKeTL";
+            this.btnThongKeTL.Size = new System.Drawing.Size(180, 63);
+            this.btnThongKeTL.TabIndex = 3;
+            this.btnThongKeTL.Text = "Thống kê";
+            this.btnThongKeTL.Click += new System.EventHandler(this.btnThongKeTL_Click);
             // 
             // tabPage4
             // 
@@ -2031,42 +2067,6 @@
             this.dtgvNXB.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvNXB.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dtgvNXB.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvNXB_CellClick);
-            // 
-            // btnThongKe
-            // 
-            this.btnThongKe.BorderRadius = 15;
-            this.btnThongKe.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnThongKe.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnThongKe.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnThongKe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnThongKe.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnThongKe.FillColor = System.Drawing.Color.Lime;
-            this.btnThongKe.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnThongKe.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnThongKe.Location = new System.Drawing.Point(1058, 7);
-            this.btnThongKe.Name = "btnThongKe";
-            this.btnThongKe.Size = new System.Drawing.Size(180, 63);
-            this.btnThongKe.TabIndex = 3;
-            this.btnThongKe.Text = "Thống kê";
-            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
-            // 
-            // btnThongKeTL
-            // 
-            this.btnThongKeTL.BorderRadius = 15;
-            this.btnThongKeTL.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnThongKeTL.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnThongKeTL.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnThongKeTL.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnThongKeTL.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnThongKeTL.FillColor = System.Drawing.Color.Lime;
-            this.btnThongKeTL.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnThongKeTL.ForeColor = System.Drawing.Color.Black;
-            this.btnThongKeTL.Location = new System.Drawing.Point(1058, 7);
-            this.btnThongKeTL.Name = "btnThongKeTL";
-            this.btnThongKeTL.Size = new System.Drawing.Size(180, 63);
-            this.btnThongKeTL.TabIndex = 3;
-            this.btnThongKeTL.Text = "Thống kê";
-            this.btnThongKeTL.Click += new System.EventHandler(this.btnThongKeTL_Click);
             // 
             // btnThongKeNXB
             // 

@@ -43,11 +43,9 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Combobox_ThongKE_BUS.cs" />
-
+    <Compile Include="DocGia_BUS.cs" />
     <Compile Include="Phieu_BUS.cs" />
-
     <Compile Include="NXB_BUS.cs" />
-
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sach_BUS.cs" />
     <Compile Include="TacGia_BUS.cs" />

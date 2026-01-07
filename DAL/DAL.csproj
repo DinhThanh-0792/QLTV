@@ -44,6 +44,7 @@
     <Compile Include="Combobox_thongke_DAL.cs" />
     <Compile Include="Connect.cs" />
     <Compile Include="CTPhieu_DAL.cs" />
+    <Compile Include="DocGia_DAL.cs" />
     <Compile Include="NXB_DAL.cs" />
     <Compile Include="Phieu_DAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
